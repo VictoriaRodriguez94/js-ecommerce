@@ -1,0 +1,51 @@
+'"productos":[
+	{"titulo":"VASO TERMICO",
+	"image": "imagenes/otros/vasotermico.jpg",
+	"precio":"$450"
+	},
+	{"titulo":"BUZO NAZA",
+	"image": "imagenes/otros/naza.jpg",
+	"precio":"$790"
+	},
+	{"titulo":"REMERA ESTOY MUY EBRIA!",
+	"image": "imagenes/remeras/rem7.jpg",
+	"precio":"$350"
+	},
+	{"titulo":"YERBERA",
+	"image": "imagenes/otros/yerbera.jpg",
+	"precio":"$420"
+	},
+	{"titulo":"VASO TERMICO",
+	"image": "imagenes/otros/otros.jpg",
+	"precio":"$400"
+	},
+	{"titulo":"REMERA",
+	"image": "imagenes/remeras/rem9.jpg",
+	"precio":"$590"
+	},
+	{"titulo":"ALMOHADON",
+	"image": "imagenes/almohadones/almohadon3.jpg",
+	"precio":"$450"
+	},
+	{"titulo":"MOUSE PAD",
+	"image": "imagenes/mouse/mouse6.jpg",
+	"precio":"$390"
+	},
+	{"titulo":"MOUSE PAD",
+	"image": "imagenes/otros/Mous2.jpg",
+	"precio":"$450"
+	},
+	{"titulo":"TAZA TERMICA",
+	"image": "imagenes/tazas/Taza3.jpg",
+	"precio":"$450"
+	},
+	{"titulo":"BUZO OCEANICO",
+	"image": "imagenes/buzos/buzo6.jpg",
+	"precio":"$450"
+	},
+	{"titulo":"TAZA MAGICA",
+	"image": "imagenes/otros/tazamagica.jpg",
+	"precio":"$450"
+	}
+]';
+

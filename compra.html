@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e26015140d.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <img src="imagenes/logo.png" id="logo">
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <button class="fas fa-hand-holding-usd"></button>
+                        <div id="carrito">
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="compra.html" class="button u-full-width">Procesar
+                                compra</a>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+
+
+
+    <main>
+
+        <section class="container-fluid contacto">
+            <div class="container h-100 font-weight-bold" id="registration-form">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-4 align-self-center text-center ">
+                        <h1 class="animate__animated wow animate__swing">METODO DE PAGO</h1>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 form-group align-self-center ">
+                        <label for="metodoDePago">Seleccione su método de pago</label>
+                        <select id="seleccionado" onchange="seleccionarMetodo();">
+                            <option value="TransferenciaBancaria"> Transferencia Bancaria </option>
+                            <option value="Tarjetadecrédito"> Tarjeta de crédito </option>
+                            <option value="TarjetaDeDebito"> Tarjeta de débito </option>
+                        </select>
+                        <span id="metodoSeleccionado"> </span>
+                 
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 form-group align-self-center ">
+                        <label for="username">Nombre completo</label>
+                        <input type="text" class="form-control" id="username" placeholder="Tu nombre completo" onchange="datos(event)">
+                    </div>
+                </div>
+
+
+
+                <div class="row  justify-content-center">
+                    <div class=" col-lg-6 form-group align-self-center">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="ingresatumail@gmail.com" onchange="datos1()">
+                    </div>
+                </div>
+
+
+                <div class="row  justify-content-center">
+                    <div class=" col-lg-6 form-group">
+                        <label for="number">Celular o teléfono fijo</label>
+                        <input type="number" class="form-control" id="numero" placeholder="351 555 6666 " maxlength="7" onchange="datos2()">
+                    </div>
+                </div>
+
+                <div class="row  justify-content-center">
+                    <div class="col-lg-6 form-group">
+                        <label for="consulta"> ¿Cuál es su consulta?</label>
+                        <textarea maxlength="50" id ="mensaje" name="consulta" rows="5" class="form-control form-control-sm" onchange="texto()"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="row  justify-content-center">
+                    <div class="col-lg-6 form-group">
+                        <button id="enviar" type="submit" class="btn btn-warning btn-lg float-left"
+                            onchange="myScript()" onkeypress="capturarEnter(event)">Enviar</button>
+                    </div>
+                </div>
+
+                </form>
+        </section>
+    </main>
+
+
+
+    <footer class="Container-fluid" id="contenedor">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+            <i class="far fa-paper-plane fa-lg mb-2"></i>
+            <h5 class="text-white mb-5">¿Queres recibir nuestras ofertas y promociones?</h5>
+            <form class="form-inline d-flex">
+                <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email"
+                    placeholder="ingresa tu e-mail...">
+                <button onclick="MensajeDeSuscripcion()" class="btn btn-warning mx-auto" type="submit" id="botonaso"
+                    value="">Subscribite
+                    :)</button>
+            </form>
+        </div>
+        </div>
+
+        <div class="social d-flex justify-content-center">
+      
+            <p> ©Copyright | Todos los derechos reservados Victoria Rodriguez </p>
+        </div>
+
+
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/carrito.js"></script>
+
+
+</body>
+
+</html>
